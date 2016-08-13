@@ -1,0 +1,179 @@
+* {
+margin: 0;
+padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  display: block;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+  /*base settings for mobile first*/
+
+header{
+    background-color: black;
+    color: white;
+    padding: 2px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+font-size: 18vw;
+}
+
+#random { /*margin & position do nothing for header covering elements*/
+    border: solid 3px black;
+    padding: 10px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+}
+#rand-box{
+background-color: #87D0E8;
+height: 70vw;
+		}
+
+h2 {
+  font-size: 8vw;
+  text-align: center;
+}
+
+section {
+    /*background-image: url("sticky.jpeg");
+    background-size: 95%;*/
+    display: block;
+    background-color: pink;
+    text-align: center;
+    margin: auto;
+    background-repeat: no-repeat;
+    height: 70vw;
+    width: 70vw;
+    margin-top: 10px;
+}
+section:hover {
+  background-color: black;
+  color: white;
+	transform: scale(1.2, 1.2);
+}
+
+#rand-box:hover {
+  background-color: black;
+  color: white;
+}
+
+  p {
+  font-size: 8vw;
+  line-height: 2;
+  text-align: center;
+}
+.big {
+  font-size: 400%;
+}
+
+@media screen and (min-width: 700px) {
+		body {
+		background-color: gray;
+		text-align: center;
+	}
+header {
+	font-size: 12vw;
+}
+#random{
+	width: 35vw;
+	height: 35vw;
+}
+#rand-box{
+	width: 28vw;
+	height: 28vw;
+	margin: auto;
+}
+
+p{
+	font-size: 5vw;
+}
+
+}
+.big {
+  font-size: 300%;
+}
+
+h2 {
+	font-size: 4vw;
+}
+			section {
+				margin: auto;
+				margin-top: 20px;
+			width: 30vw;
+			height: 30vw;
+
+			margin-left: 12px;
+display: inline-block;
+    }
+
+	}
+@media screen and (min-width: 1200px) {
+	body {
+		background-color: blue;
+}
+
+header {
+	font-size: 8vw;
+}
+h2{
+	font-size: 3vw;
+}
+#random{
+	width: 25vw;
+	height: 25vw;
+}
+#rand-box{
+	width: 18vw;
+	height: 18vw;
+	margin: auto;
+}
+
+p {
+	font-size: 3vw;
+	line-height: 2;
+}
+
+
+}
+@media screen and (min-width: 1000px) {
+	body {
+		background-color: blue;
+}
+h2 {
+  font-size: 2.5vw;
+}
+
+#rand-box p {
+  line-height: 1.5;
+  font-size: 2.5vw;
+}
+
+
+#random{
+	width: 23vw;
+	height: 23vw;
+}
+#rand-box{
+	width: 16vw;
+	height: 16vw;
+	margin: auto;
+}
+p {
+  margin-top: 20px;
+  font-size: 3vw;
+}
+.big {
+  font-size: 400%;
+}
+}

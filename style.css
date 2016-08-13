@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Maven;
+    src: url(MavenPro-Medium.ttf);
+}
+* {margin:0; padding: 0;font-size: 100%;font: inherit;vertical-align: baseline;display: block;}
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {font-family: Maven;}
+#main {
+  background-image: url(fruits_background.png);
+  background-repeat: repeat-y;
+  background-position: center;
+pointer-events: auto;
+}
+header {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: calc(3vw + 3vh + 2vmin);
+}
+#random {
+    border: solid 3px black;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 10px;
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+}
+#rand-box {
+    background-color: rgba(71, 237, 85, .75);
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+#grid, #form {
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+section {
+    background-color: rgba(71, 237, 85, .75);
+    border-radius: 10%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+}
+#form section {
+  width: 50vw;
+min-width: 300px;
+line-height: normal;
+  font-size: 12px;
+margin-top: 20px;
+}
+section:hover {
+    background-color: black;
+    color: white;
+}
+#rand-box:hover {
+    background-color: black;
+    color: white;
+}
+p {margin-top: 15px; font-size: 30px; line-height: 2; text-align: center;}
+.big {font-size: 60px;}
+form {width: 300px; margin: auto; margin-top: 20px; background-color: rgba(71, 237, 85, .75);
+    border-radius: 10%;  padding: 2vw;  font-size: 20px;}
+form input[type="text"] {width: 200px; font-family: Maven;}
+form input[type="text"]:hover  {transform: scale(1.1, 1.1);}
+form input[type="radio"] {display: inline;}
+h3 {text-align: center; font-size: 30px; margin-bottom: 8px;}
+#submit {width: 100px; height: 30px; margin: auto; margin-top: 10px; border: none;
+    border-radius: 10%; color: white; background-color: black;}
+#study {display: none; height: 100vh; width: 100vw;
+  background-image: url(lemon-small.jpg);background-size:200px 200px;
+  position: fixed; left:0; top:-10px; color: black; border: none; border-radius:0; }
+#study p {background-color: orange; border-radius: 10%; margin-top: 8vh;}
+.blackButton {margin:auto; margin-top: 30px; background-color: black; color: white; width: 100px; height: 50px; border: none; border-radius: 10%;}

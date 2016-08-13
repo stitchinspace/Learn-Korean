@@ -1,0 +1,95 @@
+<!--links to add:
+http://www.indiana.edu/~koreanrs/hangul.html
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn Korean</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="dictData.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+ <div id="main">
+    <header>Learn Korean</header>
+    <div id="random">
+        <h2>Random Word</h2>
+        <div id="rand-box">
+            <p>Hangul</p>
+            <p class="big">명사</p>
+            <p>English</p>
+        </div>
+    </div>
+
+    <div id="grid">
+        <section class="grid magenta" id="noun">
+            <p>myeongsa</p>
+            <p class="big">명사</p>
+            <p>nouns</p>
+        </section>
+        <section class="grid green" id="verb">
+            <p>dongsa</p>
+            <p class="big">동사</p>
+            <p>verbs</p>
+        </section>
+        <section class="grid yellow" id="adjective">
+            <p>hyeong-yongsa</p>
+            <p class="big">형용사</p>
+            <p>adjectives</p>
+        </section>
+      <section class="grid orange" id="adverb">
+          <p>busa</p>
+          <p class="big">부사</p>
+          <p>adverbs</p>
+      </section>
+    <section class="grid blue" id="other">
+        <p>daleun</p>
+        <p class="big">다른</p>
+        <p>other</p>
+    </section>
+    <!--<section class="grid" id="exclamations">
+        <p>gamtan</p>
+        <p class="big">감탄</p>
+        <p>exclamations</p>
+    </section> -->
+</div>
+
+    <div id="form" title="upon submit, text to copy into dict file will appear on the right.">
+        <form>
+            <h3>Enter a word</h3> Transliteration:
+            <input type="text" id="translitInput"> Hangul:
+            <input type="text" id="hangulInput"> English:
+            <input type="text" id="englishInput">
+            <div id="part">part of speech:
+                <br>
+                <input type="radio" name="part" value="noun">noun</input>
+                <input type="radio" name="part" value="verb">verb</input>
+                <input type="radio" name="part" value="adjective">adjective</input>
+<br> </br>
+                <input type="radio" name="part" value="adverb">adverb</input>
+                <input type="radio" name="part" value="other">other</input>
+                <button type="button" id="submit" value="Submit">submit</button>
+            </div>
+        </form>
+        <section>
+            <h3>JSON for file:</h3>
+            <p id="result-area"></p>
+        </section>
+    </div>
+  </div>
+
+    <section id="study">
+      <div>
+        <p id="translit" class="study">click for transliteration</p>
+        <p id="hangul" class="big study">click for Hangul</p>
+        <p id="english" class="study">click for English</p>
+        <button id="new" class="blackButton">new word</button>
+        <button id="back" class="blackButton">back</button>
+      </div>
+    </section>
+</body>
+</html>
